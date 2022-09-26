@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCU fans</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Characters">Chatacters</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Marvel Cinematic Universe</h1>
+            <p>Where Our Super Heros Alive</p>
+            <a href="" class="hero-btn">Explore MCU</a>
+        </div>
+    </section>
+    <!--------------------- Chatacters----------------------->
+    <section class="characters">
+        <a name="Characters"></a>
+        
+        <h1>Marvel Cinematic Universe</h1>
+        <p>Our HEROS</p>
+        <div class="row">
+            <div class="characters-col">
+                <img src="images/Captain-America.jpg" alt="Captain America">
+                <div class="layer">
+                    <h3>Captain-America</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/iron-man-2.jpg" alt="Iron Man">
+                <div class="layer">
+                    <h3>Iron-Man</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/theincrediblehulkmarvel.jpg" alt="the_incredible_hulk">
+                <div class="layer">
+                    <h3>The Incredible Hulk</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/chris-hemsworth-thor.jpg" alt="Thor">
+                <div class="layer">
+                    <h3>Thor</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/spiderman.jfif" alt="spiderman">
+                <div class="layer">
+                    <h3>Spider-Man</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/ant_man.jpg" alt="ant-man">
+                <div class="layer">
+                    <h3>Ant-Man</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/avengers-infinity-war-vision-1100604-1280x0-1.jpg" alt="vision">
+                <div class="layer">
+                    <h3>The Vision</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/black_widow.jfif" alt="black-widow">
+                <div class="layer">
+                    <h3>Black Widow</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/dr_strange.webp" alt="dr_strange">
+                <div class="layer">
+                    <h3>Dr Strange</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/Scarlet-Witch-MCU-Photo.jpg" alt="Scarlet-Witch">
+                <div class="layer">
+                    <h3>Scarlet Witch</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/groot.jfif" alt="groot">
+                <div class="layer">
+                    <h3>Groot</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/winter-soildr.jpg" alt="winter-soldier">
+                <div class="layer">
+                    <h3>The Winter Soldier</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/star-lord.jpg" alt="star-lord">
+                <div class="layer">
+                    <h3>The Star Lord</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/rocket-raccoon.jpg" alt="rocket-raccoon">
+                <div class="layer">
+                    <h3>Rocket Raccoon</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/gamora.jpg" alt="gamora">
+                <div class="layer">
+                    <h3>Gamora</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/cp-marvel.jfif" alt="captain-marvel">
+                <div class="layer">
+                    <h3>Captain Marvel</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/_falcon_card_0.jpg" alt="falcon">
+                <div class="layer">
+                    <h3>Falcon</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/black-panther.jfif" alt="black-panther">
+                <div class="layer">
+                    <h3>Black Panther</h3>
+                </div>
+            </div>
+            <div class="characters-col">
+                <img src="images/hawkeye.jfif" alt="hawkeye">
+                <div class="layer">
+                    <h3>Hawkeye</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------Pop-up-------------------------->
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="#" class="form-container">
+            <h2>Feedback</h2>
+
+            <label for="msg"><b>Send Suggestions, Appreciations</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <!------------------------- Contact ---------------------->
+    <section class="cont">
+        <a name="Contact"></a>
+        <h1>Contact us</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sequi hic voluptatibus maiores neque eos dolores eligendi animi sit modi.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+        <div class="row">
+            <div class="contact-col">
+                <img src="images/Captain-America.jpg" alt="">
+                <p>pqr</p>
+            </div>
+            <div class="contact-col">
+                <img src="images/Captain-America.jpg" alt="">
+                <p>pqr</p>
+            </div>
+            <div class="contact-col">
+                <img src="images/Captain-America.jpg" alt="">
+                <p>pqr</p>
+            </div>
+            <div class="contact-col">
+                <img src="images/Captain-America.jpg" alt="">
+                <p>pqr</p>
+            </div>
+            
+            <div class="contact-col">
+                <img src="images/Captain-America.jpg" alt="">
+                <p>pqr</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

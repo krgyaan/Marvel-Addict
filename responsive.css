@@ -1,0 +1,60 @@
+@media(max-width: 600px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+        padding: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(139, 154, 224);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s; 
+
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+}
+/* --------------popup---------------- */
+@media(max-width: 600px){
+    .form-container {
+    max-width: 250px;
+   }
+   .form-container textarea {
+       width: 200px;
+       min-height: 20vh;
+   }
+   .form-container .btn {
+    color: white;
+    border: 2px solid white;
+   }
+   .form-container .cancel {
+       background-color: red;
+   }
+   .open-button {
+       display: block;
+       border: solid 4px white;
+       position: fixed;
+   }
+}
+/* -----------------------contact------------ */
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
